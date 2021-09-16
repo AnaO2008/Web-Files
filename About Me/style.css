@@ -1,0 +1,43 @@
+h1{
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 36px;
+  color: #7490B6;
+  font-weight: normal;
+  text-align: center;
+}
+
+h2{
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 24px;
+  color: #7490B6;
+  font-weight: normal;
+}
+
+body{
+  font-family: 'Love Ya Like A Sister', cursive;
+  color: #7490B6;
+  width: 1000 px;
+  background:#F1DDDB;
+}
+
+  .center {
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+#top p{
+  text-align: center;
+}
+
+#works p{
+  text-align: center
+}
