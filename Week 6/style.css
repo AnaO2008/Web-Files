@@ -1,0 +1,103 @@
+
+/*Header Format */
+h1{
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 36px;
+  color: #7490B6;
+  font-weight: normal;
+  text-align: center;
+}
+
+h2{
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 24px;
+  color: #7490B6;
+  font-weight: normal;
+}
+
+h3{
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 18px;
+  color: #7490B6;
+  font-weight: normal;
+}
+
+h4{
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 14px;
+  color: #7490B6;
+  font-weight: normal;
+}
+
+h5{
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 13px;
+  color: #7490B6;
+  font-weight: normal;
+}
+
+h6{
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 12px;
+  color: #7490B6;
+  font-weight: normal;
+}
+
+/*This overides the default text color to the accent color */
+.accent{
+  color: #EACA85
+}
+
+/*Defines the page text / backgound style */
+body{
+  font-family: 'Love Ya Like A Sister', cursive;
+  color: #7490B6;
+  width: 1000 px;
+  background:#F1DDDB;
+  padding: 50px 50px 50px 50px
+}
+
+/*This section centers the images by default */
+.center {
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25vw;
+  height:auto;
+}
+
+/*This allows the text to be centered*/
+.centertext{
+  text-align: center;
+}
+
+.blue_button{
+  background-color: #7490B6;
+  border: none;
+  color: #EACA85;
+  padding: 12px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  border-radius: 12px;
+  transition-duration: .3s;
+  box-shadow: 4px 4px 4px #60799A;
+}
+
+.blue_button:hover{
+  border: 2px solid #61799A;
+}
+
+.blue_button:active{
+  background-color: #607798;
+  border: none;
+  font-size: 10px;
+}

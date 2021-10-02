@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <title> Starter Pokemon</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+
+    <section id=greeter>
+      <h1>Hello! Welcome to the pokemon starter selector!</h1>
+      <p>Need to select a starter pokemon, but don't know which to choose? The starter pokemon is the trainer's first pal, so it's imporntant to choose one that you can bond with and
+      take with you on your journeys. With 8 generations to choose from, there's plenty of unique pokemon to match their trainer's desires. Just answer a few questions about your preferances,
+    and we'll find the pokemon perfect for you!</p>
+    <img src="https://s2.dmcdn.net/v/NBtFj1Qclc554HLg-/x1080" alt="Ash choosing a starter pokemon">
+    </section>
+
+    <section id=type>
+      <h2>What type do you prefer?</h2>
+      <p id=grass class="blue_button">Grass</p>
+      <p id=fire class="blue_button">Fire</p>
+      <p id=water class="blue_button">Water</p>
+    </section>
+
+    <section id=nature>
+      <h2>What kind of nature matches your style?</h2>
+      <p id=calm class="blue_button">Calm</p>
+      <p id=excitable class="blue_button">Excitable</p>
+      <p id=adventurous class="blue_button">Adventurous</p>
+    </section>
+
+    <section id=look>
+      <h2>What appearance do you value most in your pokemon?</h2>
+      <p id=elegant class="blue_button">Elegant</p>
+      <p id=cuddly class="blue_button">Cuddly</p>
+      <p id=cute class="blue_button">Cute</p>
+      <br>
+      <br>
+    </section>
+
+    <section id=reSults class="centertext">
+      <p id=results class="blue_button">Click Here to Get Your Results!</p>
+      <h2 id=congrats>Your starter (choose preferances and results to reveal):</h2>
+      <img id=pokeball src="Poke_Ball.png" alt="pokeball">
+      <p id=insert></p>
+    </section>
+
+    <section id=reSet>
+      <p id=reset class="blue_button">Reset Selections</p>
+    </section>
+
+    <section id=debug>
+      <h2>Debug Buttons</h2>
+      <p>You can also use these debug buttons to see your running score for each pokemon.</p>
+      <p id=test class = "blue_button"> test button </P>
+
+      <p id=grookeydebug class="blue_button">grookey debug</p>
+      <p id=scorbunnydebug class="blue_button">scorbunny debug</p>
+      <p id=sobbledebug class="blue_button">sobble debug</p>
+      <p id=snivydebug class="blue_button">snivy debug</p>
+      <p id=tepigdebug class="blue_button">tepig debug</p>
+      <p id=oshawottdebug class="blue_button">oshawott debug</p>
+      <p id=chespindebug class="blue_button">chespin debug</p>
+      <p id=fennekindebug class="blue_button">fennekin debug</p>
+      <p id=froakiedebug class="blue_button">froakie debug</p>
+      <p id=rowletdebug class="blue_button">rowlet debug</p>
+      <p id=littendebug class="blue_button">litten debug</p>
+      <p id=poppliodebug class="blue_button">popplio debug</p>
+      <p id=turtwigdebug class="blue_button">turtwig debug</p>
+      <p id=chimchardebug class="blue_button">chimchar debug</p>
+      <p id=piplupdebug class="blue_button">piplup debug</p>
+      <p id=chikoritadebug class="blue_button">chikorita debug</p>
+      <p id=cyndaquildebug class="blue_button">cyndaquil debug</p>
+      <p id=totodiledebug class="blue_button">totodile debug</p>
+      <p id=treeckodebug class="blue_button">treecko debug</p>
+      <p id=torchicdebug class="blue_button">torchic debug</p>
+      <p id=mudkipdebug class="blue_button">mudkip debug</p>
+      <p id=bulbasaurdebug class="blue_button">bulbasaur debug</p>
+      <p id=charmanderdebug class="blue_button">charmander debug</p>
+      <p id=squirtledebug class="blue_button">squirtle debug</p>
+    </section>
+
+    <script>
+      var grookey = 0;
+      var scorbunny = 0;
+      var sobble = 0;
+      var snivy = 0;
+      var tepig = 0;
+      var oshawott = 0;
+      var chespin = 0;
+      var fennekin = 0;
+      var froakie = 0;
+      var rowlet = 0;
+      var litten = 0;
+      var popplio = 0;
+      var turtwig = 0;
+      var chimchar = 0;
+      var piplup = 0;
+      var chikorita = 0;
+      var cyndaquil = 0;
+      var totodile = 0;
+      var treecko = 0;
+      var torchic = 0;
+      var mudkip = 0;
+      var bulbasaur = 0;
+      var charmander = 0;
+      var squirtle = 0;
+
+      function grass(){
+        grookey = grookey + 1;
+        snivy = snivy+1;
+        chespin = chespin+1;
+        rowlet = rowlet+1;
+        turtwig = turtwig+1;
+        chikorita=chikorita+1;
+        treecko=treecko+1;
+        bulbasaur=bulbasaur+1;
+        document.getElementById("grass").style.background="red"
+      }
+      function fire(){
+        scorbunny=scorbunny+1;
+        tepig=tepig+1;
+        fennekin=fennekin+1;
+        litten=litten+1;
+        chimchar=chimchar+1;
+        cyndaquil=cyndaquil+1;
+        torchic=torchic+1;
+        charmander=charmander+1;
+        document.getElementById("fire").style.background="red"
+      }
+      function water(){
+        sobble=sobble+1;
+        oshawott=oshawott+1;
+        froakie=froakie+1;
+        piplup=piplup+1;
+        popplio=popplio+1;
+        totodile=totodile+1;
+        mudkip=mudkip+1;
+        squirtle=squirtle+1;
+        document.getElementById("water").style.background="red"
+      }
+      function calm(){
+        grookey=grookey+1;
+        snivy=snivy+1;
+        froakie=froakie+1;
+        popplio=popplio+1;
+        turtwig=turtwig+1;
+        chikorita=chikorita+1;
+        treecko=treecko+1;
+        squirtle=squirtle+1;
+        document.getElementById("calm").style.background="red"
+      }
+      function excitable(){
+        scorbunny=scorbunny+1;
+        oshawott=oshawott+1;
+        chespin=chespin+1;
+        rowlet=rowlet+1;
+        piplup=piplup+1;
+        totodile=totodile+1;
+        mudkip=mudkip+1;
+        charmander=charmander+1;
+        document.getElementById("excitable").style.background="red"
+      }
+      function adventurous(){
+        sobble=sobble+1;
+        tepig=tepig+1;
+        fennekin=fennekin+1;
+        litten=litten+1;
+        chimchar=chimchar+1;
+        cyndaquil=cyndaquil+1;
+        torchic=torchic+1;
+        bulbasaur=bulbasaur+1;
+        document.getElementById("adventurous").style.background="red"
+      }
+      function elegant(){
+        grookey=grookey+1
+        snivy=snivy+1
+        fennekin=fennekin+1
+        litten=litten+1
+        piplup=piplup+1
+        chikorita=chikorita+1
+        treecko=treecko+1
+        bulbasaur=bulbasaur+1
+        document.getElementById("elegant").style.background="red"
+      }
+      function cuddly(){
+        scorbunny=scorbunny+1
+        tepig=tepig+1
+        froakie=froakie+1
+        rowlet=rowlet+1
+        turtwig=turtwig+1
+        cyndaquil=cyndaquil+1
+        torchic=torchic+1
+        charmander=charmander+1
+        document.getElementById("cuddly").style.background="red"
+      }
+      function cute(){
+        sobble=sobble+1
+        oshawott=oshawott+1
+        chespin=chespin+1
+        popplio=popplio+1
+        chimchar=chimchar+1
+        totodile=totodile+1
+        mudkip=mudkip+1
+        squirtle=squirtle+1
+        document.getElementById("cute").style.background="red"
+      }
+
+      function results(){
+        var max = Math.max(
+          grookey,
+          scorbunny,
+          sobble,
+          snivy,
+          tepig,
+          oshawott,
+          chespin,
+          fennekin,
+          froakie,
+          rowlet,
+          litten,
+          popplio,
+          turtwig,
+          chimchar,
+          piplup,
+          chikorita,
+          cyndaquil,
+          totodile,
+          treecko,
+          torchic,
+          mudkip,
+          bulbasaur,
+          charmander,
+          squirtle
+        );
+
+        if (max != 0){
+          document.getElementById("congrats").innerHTML = "Your pokemon matches are:";
+          var element = document.getElementById("pokeball");
+          element.parentNode.removeChild(element);
+
+          if (scorbunny==max){
+            var sco_text = document.createElement("P");
+            sco_text.innerHTML = "Scorbunny!";
+            document.getElementById('reSults').appendChild(sco_text);
+            var sco_img = new Image();
+            sco_img.src = 'scorbunny.png';
+            document.getElementById('reSults').appendChild(sco_img);
+          }
+
+          if (tepig==max){
+            var tep_text = document.createElement("P");
+            tep_text.innerHTML = "Tepig!";
+            document.getElementById('reSults').appendChild(tep_text);
+            var tep_img = new Image();
+            tep_img.src = 'tepig.png';
+            document.getElementById('reSults').appendChild(tep_img);
+          }
+
+          if (grookey==max){
+            var gro_text = document.createElement("P");
+            gro_text.innerHTML = "Grookey!";
+            document.getElementById('reSults').appendChild(gro_text);
+            var gro_img = new Image();
+            gro_img.src = 'grookey.png';
+            document.getElementById('reSults').appendChild(gro_img);
+          }
+
+          if (sobble==max){
+            var sob_text = document.createElement("P");
+            sob_text.innerHTML = "Sobble!";
+            document.getElementById('reSults').appendChild(sob_text);
+            var sob_img = new Image();
+            sob_img.src = 'sobble.png';
+            document.getElementById('reSults').appendChild(sob_img);
+          }
+
+          if (snivy==max){
+            var sni_text = document.createElement("P");
+            sni_text.innerHTML = "Snivy!";
+            document.getElementById('reSults').appendChild(sni_text);
+            var sni_img = new Image();
+            sni_img.src = 'snivy.png';
+            document.getElementById('reSults').appendChild(sni_img);
+          }
+
+          if (oshawott==max){
+            var osh_text = document.createElement("P");
+            osh_text.innerHTML = "Oshawott!";
+            document.getElementById('reSults').appendChild(osh_text);
+            var osh_img = new Image();
+            osh_img.src = 'oshawott.png';
+            document.getElementById('reSults').appendChild(osh_img);
+          }
+
+          if (chespin==max){
+            var che_text = document.createElement("P");
+            che_text.innerHTML = "Chespin!";
+            document.getElementById('reSults').appendChild(che_text);
+            var che_img = new Image();
+            che_img.src = 'chespin.png';
+            document.getElementById('reSults').appendChild(che_img);
+          }
+
+          if (fennekin==max){
+            var fen_text = document.createElement("P");
+            fen_text.innerHTML = "Fennekin!";
+            document.getElementById('reSults').appendChild(fen_text);
+            var fen_img = new Image();
+            fen_img.src = 'fennekin.png';
+            document.getElementById('reSults').appendChild(fen_img);
+          }
+
+          if (froakie==max){
+            var fro_text = document.createElement("P");
+            fro_text.innerHTML = "Froakie!";
+            document.getElementById('reSults').appendChild(fro_text);
+            var fro_img = new Image();
+            fro_img.src = 'froakie.png';
+            document.getElementById('reSults').appendChild(fro_img);
+          }
+
+          if (rowlet==max){
+            var row_text = document.createElement("P");
+            row_text.innerHTML = "Rowlet!";
+            document.getElementById('reSults').appendChild(row_text);
+            var row_img = new Image();
+            row_img.src = 'rowlet.png';
+            document.getElementById('reSults').appendChild(row_img);
+          }
+
+          if (litten==max){
+            var lit_text = document.createElement("P");
+            lit_text.innerHTML = "Litten!";
+            document.getElementById('reSults').appendChild(lit_text);
+            var lit_img = new Image();
+            lit_img.src = 'litten.png';
+            document.getElementById('reSults').appendChild(lit_img);
+          }
+
+          if (popplio==max){
+            var pop_text = document.createElement("P");
+            pop_text.innerHTML = "Popplio!";
+            document.getElementById('reSults').appendChild(pop_text);
+            var pop_img = new Image();
+            pop_img.src = 'poplio.png';
+            document.getElementById('reSults').appendChild(pop_img);
+          }
+
+          if (turtwig==max){
+            var tur_text = document.createElement("P");
+            tur_text.innerHTML = "Turtwig!";
+            document.getElementById('reSults').appendChild(tur_text);
+            var tur_img = new Image();
+            tur_img.src = 'turtwig.png';
+            document.getElementById('reSults').appendChild(tur_img);
+          }
+
+          if (piplup==max){
+            var pip_text = document.createElement("P");
+            pip_text.innerHTML = "Piplup!";
+            document.getElementById('reSults').appendChild(pip_text);
+            var pip_img = new Image();
+            pip_img.src = 'piplup.png';
+            document.getElementById('reSults').appendChild(pip_img);
+          }
+
+          if (chimchar==max){
+            var chim_text = document.createElement("P");
+            chim_text.innerHTML = "Chimchar!";
+            document.getElementById('reSults').appendChild(chim_text);
+            var chim_img = new Image();
+            chim_img.src = 'chimchar.png';
+            document.getElementById('reSults').appendChild(chim_img);
+          }
+
+          if (chikorita==max){
+            var chik_text = document.createElement("P");
+            chik_text.innerHTML = "Chikorita!";
+            document.getElementById('reSults').appendChild(chik_text);
+            var chik_img = new Image();
+            chik_img.src = 'chikorita.png';
+            document.getElementById('reSults').appendChild(chik_img);
+          }
+
+          if (cyndaquil==max){
+            var cyn_text = document.createElement("P");
+            cyn_text.innerHTML = "Cyndaquil!";
+            document.getElementById('reSults').appendChild(cyn_text);
+            var cyn_img = new Image();
+            cyn_img.src = 'cyndaquil.png';
+            document.getElementById('reSults').appendChild(cyn_img);
+          }
+
+          if (totodile==max){
+            var tot_text = document.createElement("P");
+            tot_text.innerHTML = "Totodile!";
+            document.getElementById('reSults').appendChild(tot_text);
+            var tot_img = new Image();
+            tot_img.src = 'totodile.png';
+            document.getElementById('reSults').appendChild(tot_img);
+          }
+
+          if (treecko==max){
+            var tre_text = document.createElement("P");
+            tre_text.innerHTML = "Treecko!";
+            document.getElementById('reSults').appendChild(tre_text);
+            var tre_img = new Image();
+            tre_img.src = 'treecko.png';
+            document.getElementById('reSults').appendChild(tre_img);
+          }
+
+          if (torchic==max){
+            var tor_text = document.createElement("P");
+            tor_text.innerHTML = "Torchic!";
+            document.getElementById('reSults').appendChild(tor_text);
+            var tor_img = new Image();
+            tor_img.src = 'torchic.png';
+            document.getElementById('reSults').appendChild(tor_img);
+          }
+
+          if (mudkip==max){
+            var mud_text = document.createElement("P");
+            mud_text.innerHTML = "Mudkip!";
+            document.getElementById('reSults').appendChild(mud_text);
+            var mud_img = new Image();
+            mud_img.src = 'mudkip.png';
+            document.getElementById('reSults').appendChild(mud_img);
+          }
+
+          if (bulbasaur==max){
+            var bul_text = document.createElement("P");
+            bul_text.innerHTML = "Bulbasaur!";
+            document.getElementById('reSults').appendChild(bul_text);
+            var bul_img = new Image();
+            bul_img.src = 'bulbasaur.png';
+            document.getElementById('reSults').appendChild(bul_img);
+          }
+
+          if (charmander==max){
+            var char_text = document.createElement("P");
+            char_text.innerHTML = "Charmander!";
+            document.getElementById('reSults').appendChild(char_text);
+            var char_img = new Image();
+            char_img.src = 'charmander.png';
+            document.getElementById('reSults').appendChild(char_img);
+          }
+
+          if (squirtle==max){
+            var squ_text = document.createElement("P");
+            squ_text.innerHTML = "Squirtle!";
+            document.getElementById('reSults').appendChild(squ_text);
+            var squ_img = new Image();
+            squ_img.src = 'squirtle.png';
+            document.getElementById('reSults').appendChild(squ_img);
+          }
+
+        }
+
+      }
+
+      function reset(){
+        location.reload();
+        return false;
+      }
+
+
+      function grookeytest(){
+        alert ("grookey score: " + grookey);
+      }
+      function scorbunnytest(){
+        alert("scorbunny score: "+ scorbunny);
+      }
+      function sobbletest(){
+        alert("sobble score: "+ sobble);
+      }
+      function snivytest(){
+        alert("snivy score: "+ snivy);
+      }
+      function tepigtest(){
+        alert("tepig score: "+ tepig);
+      }
+      function oshawottest(){
+        alert("oshawott score: "+ oshawott);
+      }
+      function chespintest(){
+        alert("chespin score: "+ chespin);
+      }
+      function fennekintest(){
+        alert("fennekin score: "+ fennekin);
+      }
+      function froakietest(){
+        alert("froakie score: "+ froakie);
+      }
+      function rowlettest(){
+        alert("rowlet score: "+ rowlet);
+      }
+      function littentest(){
+        alert("litten score: "+ litten);
+      }
+      function poppliotest(){
+        alert("popplio score: "+ popplio);
+      }
+      function turtwigtest(){
+        alert("turtwig score: "+ turtwig);
+      }
+      function chimchartest(){
+        alert("chimchar score: "+ chimchar);
+      }
+      function pipluptest(){
+        alert("piplup score: "+ piplup);
+      }
+      function chikoritatest(){
+        alert("chikorita score: "+ chikorita);
+      }
+      function cyndaquiltest(){
+        alert("cyndaquil score: "+ cyndaquil);
+      }
+      function totodiletest(){
+        alert("totodile score: "+ totodile);
+      }
+      function treeckotest(){
+        alert("treeckoscore: "+ treecko);
+      }
+      function torchictest(){
+        alert("torchic score: "+ torchic);
+      }
+      function mudkiptest(){
+        alert("mudkip score: "+ mudkip);
+      }
+      function bulbasaurtest(){
+        alert("bulbasaur score: "+ bulbasaur);
+      }
+      function charmandertest(){
+        alert("charmander score: "+ charmander);
+      }
+      function squirtletest(){
+        alert("squirtle score: "+ squirtle);
+      }
+
+      function buttontest(){
+        alert("The buttons are working");
+      }
+
+      document.getElementById("test").addEventListener("click", buttontest);
+
+      document.getElementById("grass").addEventListener("click", grass);
+      document.getElementById("fire").addEventListener("click", fire);
+      document.getElementById("water").addEventListener("click", water);
+      document.getElementById("calm").addEventListener("click", calm);
+      document.getElementById("excitable").addEventListener("click", excitable);
+      document.getElementById("adventurous").addEventListener("click", adventurous);
+      document.getElementById("elegant").addEventListener("click", elegant);
+      document.getElementById("cuddly").addEventListener("click", cuddly);
+      document.getElementById("cute").addEventListener("click", cute);
+
+      document.getElementById("results").addEventListener("click", results);
+
+      document.getElementById("reset").addEventListener("click", reset);
+
+      document.getElementById("grookeydebug").addEventListener("click", grookeytest);
+      document.getElementById("scorbunnydebug").addEventListener("click", scorbunnytest);
+      document.getElementById("sobbledebug").addEventListener("click", sobbletest);
+      document.getElementById("snivydebug").addEventListener("click", snivytest);
+      document.getElementById("tepigdebug").addEventListener("click", tepigtest);
+      document.getElementById("oshawottdebug").addEventListener("click", oshawottest);
+      document.getElementById("chespindebug").addEventListener("click", chespintest);
+      document.getElementById("fennekindebug").addEventListener("click", fennekintest);
+      document.getElementById("froakiedebug").addEventListener("click", froakietest);
+      document.getElementById("rowletdebug").addEventListener("click", rowlettest);
+      document.getElementById("littendebug").addEventListener("click", littentest);
+      document.getElementById("poppliodebug").addEventListener("click", poppliotest);
+      document.getElementById("turtwigdebug").addEventListener("click", turtwigtest);
+      document.getElementById("chimchardebug").addEventListener("click", chimchartest);
+      document.getElementById("piplupdebug").addEventListener("click", pipluptest);
+      document.getElementById("chikoritadebug").addEventListener("click", chikoritatest);
+      document.getElementById("cyndaquildebug").addEventListener("click", cyndaquiltest);
+      document.getElementById("totodiledebug").addEventListener("click", totodiletest);
+      document.getElementById("treeckodebug").addEventListener("click", treeckotest);
+      document.getElementById("torchicdebug").addEventListener("click", torchictest);
+      document.getElementById("mudkipdebug").addEventListener("click", mudkiptest);
+      document.getElementById("bulbasaurdebug").addEventListener("click", bulbasaurtest);
+      document.getElementById("charmanderdebug").addEventListener("click", charmandertest);
+      document.getElementById("squirtledebug").addEventListener("click", squirtletest);
+
+
+      console.log("javascript working");
+
+    </script>
+
+  </body>
+</html>
