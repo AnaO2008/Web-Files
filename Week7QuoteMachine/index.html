@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <title>Quote Generator</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <section id=buton_box>
+      <h2 id=quote>Click the button below to generate a quote!</h2>
+      <button id=button class="blue_button">Generate Quote</button>
+    </section>
+
+    <script>
+      const array = ["There is hope, even when your brain tells you there isn’t.",
+      "Sometimes, life will kick you around, but sooner or later, you realize you’re not just a survivor. You’re a warrior, and you’re stronger than anything life throws your way.",
+      "And if today all you did was hold yourself together, I’m proud of you.",
+      "I have endured pain and loss. I have felt broken. I have known hardship, and I have felt lost and alone. But here I stand, trying to move forward, one day at a time. I will remember the lessons in my life because they are making me who I am. Stronger. A warrior.",
+      "Sometimes you climb out of bed in the morning and you think, I’m not going to make it, but you laugh inside – remembering all the times you’ve felt that way",
+      "In the middle of winter I at last discovered that there was in me an invincible summer.",
+      "Once you choose hope, anything is possible.",
+      "Character cannot be developed in ease and quiet. Only through experience of trial and suffering can the soul be strengthened, ambition inspired, and success achieved.",
+      "People who are crazy enough to think they can change the world, are the ones who do.",
+      "All our dreams can come true if we have the courage to pursue them.",
+      "Success is not final, failure is not fatal: it is the courage to continue that counts.",
+      "I can’t change the direction of the wind, but I can adjust my sails to always reach my destination.",
+      "We must be willing to let go of the life we planned so as to have the life that is waiting for us."];
+
+      var num=0;
+
+      document.getElementById("button").addEventListener("click", quotegenerator);
+
+      function quotegenerator(){
+        if (num <=12){
+          document.getElementById("quote").innerHTML=array[num];
+          num++;
+        }
+
+        else{
+          num=0
+          document.getElementById("quote").innerHTML=array[num];
+          num++;
+        }
+      }
+
+    </script>
+
+  </body>
+
+  </html>
