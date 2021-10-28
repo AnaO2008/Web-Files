@@ -192,7 +192,7 @@
       "The greatest discovery of my generation is that a human being can alter his life by altering his attitudes."]
 
 
-    document.getElementById("quote").innerHTML=array[1]
+    document.getElementById("quote").innerHTML=array[daynum]
 
     //sets the slug stats on startup
     let prevday = "Progress";
@@ -260,7 +260,7 @@
       journalEntry.innerHTML= "I am greatful for " + answer;
       document.getElementById("ProgressPlan").appendChild(journalEntry);
       document.getElementById("EnergyText").innerHTML = Energy;
-      document.getElementById("LevelText").innerHTML = Level
+
 
       //re-establishes the slug stats
       if(Energy<=10){
@@ -284,6 +284,8 @@
       else if (60<Energy) {
         Level= 7
       }
+
+      document.getElementById("LevelText").innerHTML = Level;
 
       if(2 <= Level){
         document.getElementById("Level2").style.display="block";
@@ -319,7 +321,7 @@
       journalEntry.innerHTML="A reafirming thought is: " + answer;
       document.getElementById("ProgressPlan").appendChild(journalEntry);
       document.getElementById("EnergyText").innerHTML = Energy;
-      document.getElementById("LevelText").innerHTML = Level
+
 
       //re-establishes the slug stats
       if(Energy<=10){
@@ -343,6 +345,8 @@
       else if (60<Energy) {
         Level= 7
       }
+
+      document.getElementById("LevelText").innerHTML = Level;
 
       if(2 <= Level){
         document.getElementById("Level2").style.display="block";
@@ -378,7 +382,7 @@
       journalEntry.innerHTML= "I am good at " + answer;
       document.getElementById("ProgressPlan").appendChild(journalEntry);
       document.getElementById("EnergyText").innerHTML = Energy;
-      document.getElementById("LevelText").innerHTML = Level
+
 
       //re-establishes the slug stats
       if(Energy<=10){
@@ -402,6 +406,8 @@
       else if (60<Energy) {
         Level= 7
       }
+
+      document.getElementById("LevelText").innerHTML = Level;
 
       if(2 <= Level){
         document.getElementById("Level2").style.display="block";
@@ -457,6 +463,8 @@
       else if (60<Energy) {
         Level= 7
       }
+
+      document.getElementById("LevelText").innerHTML = Level;
 
       if(2 <= Level){
         document.getElementById("Level2").style.display="block";

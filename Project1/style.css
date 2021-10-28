@@ -179,14 +179,6 @@ img{
 }
 
 @keyframes expand{
-  /*from{
-    height: 25px;
-    width: 25px;
-  }
-  to{
-    height: 100px;
-    width: 100px;
-  }*/
 
   0%{
     height:25px;
