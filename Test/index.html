@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Oldham_AboutMe_Tester</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <section id=tabs class="tabs">
+    <div class="tab active" id=AboutMe>
+      <h2>About Me</h2>
+    </div>
+    <div class="tab" id=Works>
+      <h2>Works</h2>
+    </div>
+    <div class="tab" id=Resume>
+      <h2>Resume</h2>
+    </div>
+  </section>
+
+  <section>
+    <div class="flex1" id=pages>
+
+      <div id=AboutMePage>
+        <p>About Me!</p>
+      </div>
+
+      <div id=WorksPage>
+        <p>See my works!</p>
+      </div>
+
+      <div id=ResumePage>
+        <p>My resume!</p>
+      </div>
+
+    </div>
+  </section>
+
+  <script type="text/javascript">
+
+  //console.log("starting")
+
+  //sets function and display for the tabs
+  document.getElementById("AboutMe").addEventListener("click", setActive, false);
+  document.getElementById("Works").addEventListener("click", setActive, false);
+  document.getElementById("Resume").addEventListener("click", setActive, false);
+
+
+  function setActive(e){
+    prevpage = document.getElementsByClassName("active")[0].id;
+    if(prevpage != undefined){
+      document.getElementById(prevpage).classList.toggle("active");
+      document.getElementById(prevpage +"Page").style.display="none";
+    e.target.classList.toggle("active");
+    }
+    console.log("prevpage:" + prevpage)
+    page=document.getElementsByClassName("active")[0].id;
+    console.log("page:" +page);
+    document.getElementById(page +"Page").style.display="block";
+  }
+
+  </script>
+
+</body>
+</html>
